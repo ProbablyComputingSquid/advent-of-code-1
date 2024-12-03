@@ -1,16 +1,14 @@
 import { readFileSync } from 'fs';
 
-var file = readFileSync('input.txt').toString("utf-8");
+var file = readFileSync('aoc-1-2/input.txt').toString("utf-8");
 
 var lines = file.split("\n")
 
 var list2Times: Record<number, number> = {};
 
 for (let i = 0; i < lines.length; i++) {
-    let split = lines[i].split("   ");
-    //let num1 = split[0];
+    let split = lines[i].split("   ");  
     let num2 = split[1];
-    //list1Times[num1] += 1;
     if (list2Times[num2] == undefined) {
         list2Times[num2] = 0;
     }

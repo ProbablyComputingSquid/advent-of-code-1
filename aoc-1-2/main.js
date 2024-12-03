@@ -1,14 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = require("fs");
-var file = (0, fs_1.readFileSync)('input.txt').toString("utf-8");
+var file = (0, fs_1.readFileSync)('aoc-1-2/input.txt').toString("utf-8");
 var lines = file.split("\n");
 var list2Times = {};
 for (var i = 0; i < lines.length; i++) {
     var split = lines[i].split("   ");
-    //let num1 = split[0];
     var num2 = split[1];
-    //list1Times[num1] += 1;
     if (list2Times[num2] == undefined) {
         list2Times[num2] = 0;
     }
