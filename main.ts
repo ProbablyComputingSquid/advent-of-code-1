@@ -7,7 +7,7 @@ tasks:
 
 import { readFileSync } from 'fs';
 
-var file = readFileSync('input.txt').toString("utf-8");
+var file = readFileSync('aoc-1-2/input.txt').toString("utf-8");
 
 var lines = file.split("\n")
 var list1: String[] = [];
