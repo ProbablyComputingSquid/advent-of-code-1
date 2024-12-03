@@ -27,3 +27,6 @@ for (let i = 0; i < list1.length; i++) {
     total += Math.abs(Number(list1[i]) - Number(list2[i]));
 }
 console.log(total);
+
+
+//document.getElementById("result").innerHTML = String(total);
